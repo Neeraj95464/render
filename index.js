@@ -9,6 +9,7 @@ app.use(cors());
 
 app.get("/",(req,res) => {
     res.send("HII I am Live (This is neeraj here)");
+    console.log("you are from ip "+req.ip);
 });
 
 const io=new Server(8000, {
